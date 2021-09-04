@@ -1,0 +1,34 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "userName": "",
+            "email":"",
+            "password": ""
+        }
+    ],
+    
+    "reservations": [
+        {
+            "id": 1,
+            "userId": 1,
+            "firstName": "",
+            "lastName": "",
+            "email": "",
+            "gender": "",
+            "campName": "",
+            "siteNumber": 1,
+            "paymentType": "",
+            "time": "date"
+        }
+    ],
+
+    "messages": [
+        {
+            "senderId": 1,
+            "recipientId": 2,
+            "text": "",
+            "timestamp": "date"
+        }
+    ]
+}
