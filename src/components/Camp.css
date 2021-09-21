@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+
+/*Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+  color:darkolivegreen;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 19px;
+  line-height: 1.5;
+  background: url("https://images.pexels.com/photos/2235874/pexels-photo-2235874.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+  no-repeat fixed center / cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-style: normal;
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+  margin-bottom: 1.5em;
+  color: #d6fcff;
+  color:lightcyan;
+}
+
+strong {
+  font-weight: bold;
+}
+
+address {
+  margin: 0 0 1.5em;
+}

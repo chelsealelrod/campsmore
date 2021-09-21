@@ -1,0 +1,37 @@
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+}
+
+.navbar__item {
+    flex-basis: 20%;
+    list-style-type: none;
+}
+
+.reservations {
+    justify-content: center;
+    padding:2em;
+}
+
+.reservForm {
+    flex-basis:50%;
+    flex-wrap:wrap-reverse;
+}
+
+.trip-start {
+    background:lightgray;
+}
+
+.trip-end {
+    background:lightgray;
+}
+
+.btn btn-primary {
+    background:lightgray;
+}
+
+.ReservForm__title {
+    padding: 2em;
+    margin: 1em 0em 1em;
+}
