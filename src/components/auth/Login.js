@@ -2,7 +2,7 @@ import React, { useRef } from "react"
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom"
 import campsmore from '../images/campsmore.png'
-import { Divider, Grid, Image, Segment } from 'semantic-ui-react'
+import { Divider, Form, Grid, Segment } from 'semantic-ui-react'
 import "./Login.css"
 
 
@@ -31,44 +31,55 @@ export const Login = props => {
                 }
             })
     }
-return (  
-             <main className="container--login">
+    return (
+        <main className="container--login">
             <dialog className="dialog dialog--auth" ref={existDialog}>
                 <div>User does not exist</div>
                 <button className="button--close" onClick={e => existDialog.current.close()}>Close</button>
             </dialog>
-            
-    
-                
-                <form className="form--login" onSubmit={handleLogin}>
-                    <img className="logo" src={campsmore}/>
-                    <Segment>
-                <Grid columns={2} relaxed='very'>
-            
+            <div>
+                <img className="logo" src={campsmore} />
+            </div>
+            <div className="login__grid">
+                <Segment placeholder>
+                    <Grid columns={2} relaxed='very' stackable>
                         <Grid.Column>
-                        <label htmlFor="inputEmail"> Email address </label>
-                        <input ref={email} type="email"
-                            id="email"
-                            className="form-control"
-                            placeholder="Email address"
-                            required autoFocus />
-                    </Grid.Column>
-                    <fieldset className="button--area">
-                        <button className="sign__in" type="submit">
-                            Sign in
-                        </button>
-            
-                    </fieldset>
-                </form>
-            </section>
-            <section className="link--register">
-                <h2>Not a Member yet?</h2>
-                <Link to="/register">Sign Up</Link>
-            </section>
-            </Grid>
-            <Divider vertical></Divider>
-            </Segment>
+
+
+                            <form className="form--login" onSubmit={handleLogin}>
+
+
+                                <label htmlFor="inputEmail"> Email address </label>
+                                <input ref={email} type="email"
+                                    id="email"
+                                    className="form-control"
+                                    placeholder="Email address"
+                                    required autoFocus />
+
+                                <fieldset className="button--area">
+                                    <button className="sign__in" type="submit">
+                                        Sign in
+                                    </button>
+                                </fieldset>
+
+                            </form>
+                        </Grid.Column>
+
+
+
+                        <Grid.Column>
+                            <section className="link--register">
+                                <h2>Not a Member yet?</h2>
+                                <Link to="/register">Sign Up</Link>
+                            </section>
+                        </Grid.Column>
+                    </Grid>
+                    <Divider vertical>Or</Divider>
+                </Segment>
+            </div>
+
         </main>
+
     )
 
 }

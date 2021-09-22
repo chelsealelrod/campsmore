@@ -13,7 +13,7 @@ export const ReservationList = () => {
   useEffect(() => {
     console.log("ReservationList: useEffect - getReservations")
     getReservations()
-  }, [])
+  }, [reservations])
 
 
   return (
@@ -26,7 +26,10 @@ export const ReservationList = () => {
         reservations.map(reservation => {
           return (
             <div className="reservation" id={`reservation--${reservation.id}`}>
+              { parseInt(localStorage.getItem("camp__user"))}
+              <div>First Name: 
               { reservation.firstName }
+              </div>
               { reservation.lastName }
               { reservation.email }
               { reservation.gender }

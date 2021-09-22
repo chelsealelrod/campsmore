@@ -45,9 +45,6 @@ export const ApplicationViews = () => {
                     <CampGroundList />
                     </Route>
 
-                    <Route exact path = "/campgrounds/">
-                    <CampDetail />
-                    </Route >
 
                     </CampProvider>
                     </MessageProvider>

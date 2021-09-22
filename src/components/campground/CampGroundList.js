@@ -1,4 +1,3 @@
-import { parksKey } from "../../apikeys";
 import { CampGroundContext } from "./CampProvider"
 import { CampDetail } from "./CampDetail"
 import React, { useContext, useEffect, useState } from "react"
@@ -17,13 +16,11 @@ export const CampGroundList = () => {
         getTnParks()
     }, [])
     
-        
-
 
 
     return (
         <>
-        <section className ="parks">
+        <section className ="parks__list">
             {
                 parks.map(park => {
                     return <CampDetail key={park.id} park={park} />

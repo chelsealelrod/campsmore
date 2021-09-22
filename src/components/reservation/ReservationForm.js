@@ -14,7 +14,6 @@ export const ReservationForm = () => {
 
 
   const [reservation, setReservation] = useState({
-    userId: 1,
     firstName: "",
     lastName: "",
     email: "",
@@ -24,7 +23,8 @@ export const ReservationForm = () => {
     siteNumber: 0,
     paymentType: "",
     startDate: null,
-    endDate: null
+    endDate: null,
+    userId: parseInt(localStorage.getItem("camp__user"))
   });
 
   const {reservationId} = useParams();
@@ -60,7 +60,8 @@ export const ReservationForm = () => {
         siteNumber: reservation.siteNumber,
         paymentType: reservation.paymentType,
         startDate: null,
-        endDate: null
+        endDate: null,
+        userId: 1
       }
 
       addReservation(newReservation)
@@ -146,7 +147,8 @@ export const ReservationForm = () => {
           <label htmlFor="paymentType">Payment Type</label>
           <input type="text" id="payment" required autoFocus className="form-control" 
           value={ reservation.paymentType }
-          placeholder="Payment Type" onChange={handleControlledInputChange} />
+          placeholder="Payment Type" 
+          onChange={handleControlledInputChange} />
         </div>
 
       </fieldset>
@@ -157,7 +159,7 @@ export const ReservationForm = () => {
           <input type="date" id="start" className="trip-start"
             onChange={handleControlledInputChange}
             value= {reservation.startDate}
-            min="2021-12-01" max="2022-12-31" />
+            min="2021-10-01" max="2022-12-31" />
 
           <label for="start">End date:</label>
 

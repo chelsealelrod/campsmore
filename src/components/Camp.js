@@ -31,6 +31,8 @@ export const Camp = () => (
     <Route path="/register">
       <Register />
     </Route>
+
+  
     
   
 

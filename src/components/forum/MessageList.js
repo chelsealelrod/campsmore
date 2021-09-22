@@ -4,24 +4,28 @@ import "./Message.css"
 import { useHistory } from "react-router-dom"
 
 
-export const MessageList = (props) => {
+export const MessageList = () => {
   
   const { getMessages, messages, deleteMessage } = useContext(MessageContext)
   const  history = useHistory()
+  const [message, setMessage] = useState([])
+
 
 
   useEffect(() => {
-    console.log("MessageList: useEffect - getMessages")
+    // const thisMessage = messages.find(m => m.id === parseInt(messageId)) || {messages: {}}
+    // setMessage(thisMessage)
     getMessages()
   }, [])
 
-  const handleDelete = () => {
-    deleteMessage(props.message)
+  const handleDelete = (messageId) => { 
+    deleteMessage(messageId)
       .then(() => {
-        history.push("/messages")
+        history.push("/forum")
       })
   }
 
+ 
   return (
   
     <section className="messages">
@@ -33,7 +37,7 @@ export const MessageList = (props) => {
           return (
             <div className="message" id={`message--${message.id}`}>
               { message.text }
-              <button className="delete__button" onClick={handleDelete}>Delete</button>
+              <button className="delete__button" onClick={()=>handleDelete(message.id)}>Delete</button>
             </div>
           )
         })

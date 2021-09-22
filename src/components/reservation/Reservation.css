@@ -10,13 +10,15 @@
 }
 
 .reservations {
-    justify-content: center;
+    justify-content: justify;
     padding:2em;
 }
 
 .reservForm {
-    flex-basis:50%;
-    flex-wrap:wrap-reverse;
+    flex-basis:20%;
+    justify-content: justify;
+    border:solid gray;
+    margin-bottom: 4em;
 }
 
 .trip-start {
@@ -28,7 +30,7 @@
 }
 
 .btn btn-primary {
-    background:lightgray;
+    background-color:darkslategray;
 }
 
 .ReservForm__title {

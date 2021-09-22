@@ -7,7 +7,7 @@ export const ReservationProvider = (props) => {
     const [reservations, setReservations] = useState([])
 
     const getReservations = () => {
-        return fetch("http://localhost:8088/reservations?_expand=user")
+        return fetch("http://localhost:8088/reservations?_expand=users")
         .then(res => res.json())
         .then(setReservations)
     }

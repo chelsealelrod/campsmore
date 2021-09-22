@@ -11,14 +11,10 @@ return (
   <h2>Welcome to Camp S'More! Browse from several different
    CampGrounds, make a quick reservation to a Campsite, 
    or find out any info on all things Camping!</h2>
+   
    </section>
-   {/* <div className="camp__intro">
-<p>Visit the CampGrounds tab, you will find National Parks located in Tennessee where you can also make a new reservation</p>
-<br></br>
-<p>Add a message in the Forum if you have any tips or advice on camping</p>
-   </div> */}
 
-           <Container>
+           <Container className="home__page">
    <div className="camping__tip__links">
         <h2>Here are some helpful resources for starting your camping trip:</h2>
            <a href="https://www.campingwithstyle.co.uk/camping-the-ultimate-list-of-camping-tips-camping-hacks-tips/">
