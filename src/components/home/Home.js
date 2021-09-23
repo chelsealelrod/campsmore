@@ -6,13 +6,13 @@ export const Home = () => {
         
 return (
 <>
-        <section className="home">
+        <div className="home">
 
   <h2>Welcome to Camp S'More! Browse from several different
    CampGrounds, make a quick reservation to a Campsite, 
    or find out any info on all things Camping!</h2>
    
-   </section>
+   </div>
 
            <Container className="home__page">
    <div className="camping__tip__links">
@@ -25,8 +25,8 @@ return (
            Tricks and Guide for beginners</a>
 
            <div className="photo">
-           <img className="photo__home"src="https://images.unsplash.com/photo-1470246973918-29a93221c455?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
-            alt=""height="500px" width="400px"/>
+           <img className="photo__home" src="https://images.unsplash.com/photo-1470246973918-29a93221c455?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
+            alt="" height="1000px" width="1000px" />
    </div>
 
    </div>

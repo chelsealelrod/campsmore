@@ -27,13 +27,18 @@ export const ReservationList = () => {
           return (
             <div className="reservation" id={`reservation--${reservation.id}`}>
               { parseInt(localStorage.getItem("camp__user"))}
-              <div>First Name: 
+              <h3 className="form__list__header">Submitted Successfully! </h3>
+              <div>Thank you,<br></br>
               { reservation.firstName }
               </div>
               { reservation.lastName }
+              <br></br>
               { reservation.email }
+              <br></br>
+              <h4>for your reservation at</h4>
               { reservation.gender }
               { reservation.campName }
+              <h4>Campsite</h4>
               { reservation.campType }
               { reservation.siteNumber }
               { reservation.paymentType }

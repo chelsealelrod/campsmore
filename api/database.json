@@ -45,14 +45,14 @@
     {
       "userId": 1,
       "text": "hey this is a test",
-      "timestamp": 1632175539164,
-      "id": 9
+      "timestamp": 1632356493847,
+      "id": 11
     },
     {
       "userId": 1,
-      "text": "test tst",
-      "timestamp": 1632189787671,
-      "id": 10
+      "text": "The best camping spot I have been to so far is Cades Cove!",
+      "timestamp": 1632360049325,
+      "id": 12
     }
   ]
 }

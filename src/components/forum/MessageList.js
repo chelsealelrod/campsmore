@@ -5,9 +5,9 @@ import { useHistory } from "react-router-dom"
 
 
 export const MessageList = () => {
-  
+
   const { getMessages, messages, deleteMessage } = useContext(MessageContext)
-  const  history = useHistory()
+  const history = useHistory()
   const [message, setMessage] = useState([])
 
 
@@ -18,31 +18,34 @@ export const MessageList = () => {
     getMessages()
   }, [])
 
-  const handleDelete = (messageId) => { 
+  const handleDelete = (messageId) => {
     deleteMessage(messageId)
       .then(() => {
         history.push("/forum")
       })
   }
 
- 
+
   return (
-  
+
     <section className="messages">
-        <button onClick={() => history.push("/forum/create")}>
-                Add Message
-            </button>
+      <button onClick={() => history.push("/forum/create")}>
+        Add Message
+      </button>
       {
         messages.map(message => {
           return (
             <div className="message" id={`message--${message.id}`}>
-              { message.text }
-              <button className="delete__button" onClick={()=>handleDelete(message.id)}>Delete</button>
+              {message.text}
+              <button className="edit__button" onClick={() => {
+                history.push(`/forum/edit/${message.id}`)
+              }}>Edit</button>
+              <button className="delete__button" onClick={() => handleDelete(message.id)}>Delete</button>
             </div>
           )
         })
       }
-  
+
     </section>
   )
 }

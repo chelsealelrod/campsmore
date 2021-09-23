@@ -32,13 +32,13 @@ export const CampDetail = (props) => {
         <div className="park__description">Description:{ props.park.description }</div>
         <div className="park__reservationInfo">Reservation Info: { props.park.reservationInfo }</div>
         <div className="park__regulations">Regulations: { props.park.regulationsOverview }</div>
-        {/* <div className="park__amenities">Amenities: {props.park.amenities }</div> */}
-        <div className="park__operatingHours">Operating Hours: { props.park.operatingHours }</div>
-        <div className="park__addresses">Address: {props.park.addresses[0].line1}</div> 
-        <div className="numberOfSitesReservable">Number of Sites Reservable: { props.park.numberOfSitesReservable }</div>
-        <div className="accessability">Accessibility: {props.park.accessibility }</div>
-        <div className="accessRoads">Access Roads: { props.park.accessRoads }</div>
-        <div className="classifications">Classifications: {props.park.classifications }</div> 
+        <div className="park__amenities">Amenities: {props.park.amenities.audioDescription }</div>
+        {/* <div className="park__operatingHours">Operating Hours: { props.park.operatingHours[0] }</div> */}
+        {/* <div className="park__addresses">Address: {props.park.addresses[0].line1}</div>  */}
+        {/* <div className="numberOfSitesReservable">Number of Sites Reservable: { props.park.numberOfSitesReservable }</div> */}
+        {/* <div className="accessability">Accessibility: {props.park.accessibility }</div> */}
+        {/* <div className="accessRoads">Access Roads: { props.park.accessRoads }</div> */}
+        {/* <div className="classifications">Classifications: {props.park.classifications }</div>  */}
 
     </section>
         

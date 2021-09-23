@@ -1,5 +1,7 @@
 .home {
-    text-align:justify;
+    display:flex;
+    justify-content:right;
+    text-align:right;
     color:moccasin;
     padding: 2em;
     font-size: 2rem;
@@ -12,25 +14,20 @@
     flex-direction: column;
     margin: 0em 2em 3em;
     padding: 1em;
-    border: sold gold;
+    border: solid gold;
 }
 
 .photo__home {
     flex-direction:center;
-    justify-content:center;
-    background-color: rgba(255, 255, 255, 0.9); 
+    justify-content:right;
     margin: 0em 2em 10em;
+    border: solid pink;
+    
 }
 
 .home__page {
     margin: 0em 0em 0em 0em;
-    border: solid red;
-    background-color:lightgray;
+    background-color:darkgrey;
+    justify-content: right;
 }
 
-/* .camp__intro {
-    justify-content:space-evenly;
-    padding: 5em;
-    background:darkolivegreen;
-    margin: 0em 2em 3em;
-} */

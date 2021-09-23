@@ -9,7 +9,6 @@ import { ReservationList } from "./reservation/ReservationList"
 import { CampProvider } from "./campground/CampProvider"
 import { CampGroundList } from "./campground/CampGroundList"
 import { CampSearch } from "./campground/CampSearch"
-import { CampDetail } from "./campground/CampDetail"
 import { Home } from "./home/Home"
 
 
@@ -29,6 +28,11 @@ export const ApplicationViews = () => {
                     <Route exact path ="/forum/create">
                     <MessageForm/>
                     </Route>
+
+                    <Route exact path ="/forum/edit/:messageId(\d+)">
+                    <MessageForm/>
+                    </Route>
+
                
                     <Route exact path = "/reservations/create">
                     <ReservationForm />
@@ -43,6 +47,10 @@ export const ApplicationViews = () => {
                     <Route path = "/campgrounds">
                     <CampProvider />
                     <CampGroundList />
+                    </Route>
+
+                    <Route path = "/campgrounds">
+                    <CampSearch />
                     </Route>
 
 

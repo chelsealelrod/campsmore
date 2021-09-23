@@ -7,7 +7,7 @@ button,
 input,
 select,
 textarea {
-  color:peru;
+  color:tan;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 19px;
   line-height: 1.5;
@@ -17,15 +17,17 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   font-style: normal;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-size: 18px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 p {
   margin-bottom: 1.5em;
   color: #d6fcff;
   color:lightcyan;
+  border: solid green;
 }
 
 strong {
@@ -34,11 +36,4 @@ strong {
 
 address {
   margin: 0 0 1.5em;
-}
-
-.camp__footer {
-  text-align:center;
-  margin-bottom:0em;
-  margin-top:0em;
-  padding: 4em;
 }

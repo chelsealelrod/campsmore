@@ -1,18 +1,3 @@
-.navbar {
-    position: relative;
-    width: 100%;
-    height: 30px;
-    padding: 7px 0;
-    margin-top: 50px;
-    width: 100%;
-}
-
-.navbar__item {
-    flex-basis: 20%;
-    list-style-type:none;
-    
-}
-
 .message {
     padding: 30px;
     background:rgb(109, 122, 134);
@@ -36,8 +21,8 @@
 
 .messageForm__title {
     text-align:justify;
-    font-family:'Trebuchet MS';
-    color:whitesmoke;
+    font-family:sans-serif;
+    color: lightgoldenrodyellow;
 }
 
 .btn btn-primary {
@@ -46,9 +31,14 @@
 
 .delete__button {
     background:darkslategray;
-    justify-items: right;
+}
+
+.edit__button {
+    background:darkslategray;
 }
 
 .form-control {
     background:lightgray;
+    
+    
 }

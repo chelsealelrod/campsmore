@@ -29,7 +29,7 @@ export const CampSearch = () => {
           {
             parks.map(park =>
               <div>
-                { parks.data.name }
+                { parks.name }
               
                 <button>Search</button>
               </div>
