@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react"
 import { ReservationContext } from "./ReservationProvider"
 import "./Reservation.css"
 import { useHistory, useParams } from "react-router-dom"
-import { Container } from 'semantic-ui-react'
+
 
 
 export const ReservationForm = () => {
@@ -76,7 +76,6 @@ export const ReservationForm = () => {
 
 
   return (
-    <Container>
     <form className="reservForm">
       <h2 className="ReservForm__title">New Reservation</h2>
       <fieldset>
@@ -166,7 +165,7 @@ export const ReservationForm = () => {
           <input type="date" id="end" className="trip-end"
           onChange={handleControlledInputChange}
             value={reservation.endDate}
-            min="2021-12-01" max="2022-12-31" />
+            min="2021-10-01" max="2022-12-31" />
 
         </div>
       </fieldset>
@@ -179,7 +178,6 @@ export const ReservationForm = () => {
 
       </button>
     </form>
-    </Container>
 
   )
 }

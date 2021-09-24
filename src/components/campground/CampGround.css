@@ -2,6 +2,7 @@
     border: solid gray;
     font-family:Arial, Helvetica, sans-serif;
     background: black;
+    padding: 1.5em;
 }
 
 .parks__list {

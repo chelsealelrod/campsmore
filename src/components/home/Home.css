@@ -1,10 +1,14 @@
 .home {
     display:flex;
-    justify-content:right;
-    text-align:right;
-    color:moccasin;
-    padding: 2em;
-    font-size: 2rem;
+    justify-content:center;
+    text-align:center;
+    color:rgb(128, 78, 21);
+    padding: 1em;
+    font-size: 4rem;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-bottom: 0em;
+    background-color: rgba(155, 133, 133, 0.4);
 }
 
 .camping__tip__links {
@@ -14,20 +18,24 @@
     flex-direction: column;
     margin: 0em 2em 3em;
     padding: 1em;
-    border: solid gold;
+    background-color: rgba(155, 133, 133, 0.4);
 }
 
 .photo__home {
     flex-direction:center;
-    justify-content:right;
+    justify-content:center;
     margin: 0em 2em 10em;
-    border: solid pink;
+    width: 50%;
+    height: auto;
     
 }
-
-.home__page {
+.links {
+    color: darkslategray;
+}
+/* .home__page {
     margin: 0em 0em 0em 0em;
     background-color:darkgrey;
     justify-content: right;
-}
+    padding: 3em;
+}  */
 

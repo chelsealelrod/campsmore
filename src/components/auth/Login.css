@@ -18,6 +18,10 @@ fieldset {
     margin: 0 auto;
     text-align: center;
     font-size: 2em;
+    margin-top: -2em;
+    margin-bottom: -3em;
+    background-color: transparent;
+    background-repeat: no-repeat;
 
 }
 
@@ -59,16 +63,6 @@ fieldset {
     margin-bottom: 4em;
 }
 
-.form--login {
-    min-height: 4rem;
-    min-width: 2rem;
-    margin-bottom: 3em;
-    background-color: hsla(0,0%,100%,0.40);
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-  
-}
-
 .button--close {
     position: relative;
     bottom: -2rem;
@@ -90,16 +84,17 @@ fieldset {
 }
 
 .logo {
-    width: 30%;
-    height: 40%;
+    width: 40%;
+    height: 50%;
     margin-top: 3rem;
-    border-radius: 10em;
+    border-radius: 13em;
+    margin-left: 0em;
 }
 
 .link--register {
-    margin-top: 7em;
-    margin-bottom: 0em;
-    padding: 5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0em;
     justify-content: center;
 }
 

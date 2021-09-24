@@ -11,6 +11,10 @@
 
 }
 
+.messages {
+    padding: 1em;
+}
+
 .message__title {
     text-align: center;
     margin: 10px;

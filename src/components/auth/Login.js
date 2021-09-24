@@ -2,7 +2,6 @@ import React, { useRef } from "react"
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom"
 import campsmore from '../images/campsmore.png'
-import { Divider, Form, Grid, Segment } from 'semantic-ui-react'
 import "./Login.css"
 
 
@@ -39,14 +38,10 @@ export const Login = props => {
             <div>
                 <img className="logo" src={campsmore} />
             </div>
-            <div className="login__grid">
-                <Segment placeholder>
-                    <Grid columns={2} relaxed='very' stackable>
-                        <Grid.Column>
+            <div className="login">
 
 
                             <form className="form--login" onSubmit={handleLogin}>
-
 
                                 <label htmlFor="inputEmail"> Email address </label>
                                 <input ref={email} type="email"
@@ -62,19 +57,13 @@ export const Login = props => {
                                 </fieldset>
 
                             </form>
-                        </Grid.Column>
+                                <h3>Or</h3>
 
-
-
-                        <Grid.Column>
                             <section className="link--register">
                                 <h2>Not a Member yet?</h2>
                                 <Link to="/register">Sign Up</Link>
                             </section>
-                        </Grid.Column>
-                    </Grid>
-                    <Divider vertical>Or</Divider>
-                </Segment>
+            
             </div>
 
         </main>

@@ -28,11 +28,14 @@ export const CampDetail = (props) => {
     return (
        <> 
     <section className="park">
-        <h2 className="park__name">Name:{ props.park.name }</h2> 
-        <div className="park__description">Description:{ props.park.description }</div>
-        <div className="park__reservationInfo">Reservation Info: { props.park.reservationInfo }</div>
-        <div className="park__regulations">Regulations: { props.park.regulationsOverview }</div>
-        <div className="park__amenities">Amenities: {props.park.amenities.audioDescription }</div>
+        <h2 className="park__name">Name:<br></br>{ props.park.name }</h2>
+        <div className="park__description">Description:<br></br>{ props.park.description }</div><br></br>
+        <div className="park__reservationInfo">Reservation Info:<br></br> { props.park.reservationInfo }</div><br></br>
+        <div className="park__regulations">Regulations:<br></br> { props.park.regulationsOverview }</div>
+        <div className="park__amenities">Amenities:<br></br> {props.park.amenities.audioDescription }</div><br></br>
+        <button onClick={() => history.push("/reservations/create")}>
+                Make Reservation
+            </button>
         {/* <div className="park__operatingHours">Operating Hours: { props.park.operatingHours[0] }</div> */}
         {/* <div className="park__addresses">Address: {props.park.addresses[0].line1}</div>  */}
         {/* <div className="numberOfSitesReservable">Number of Sites Reservable: { props.park.numberOfSitesReservable }</div> */}

@@ -13,7 +13,7 @@
   ],
   "reservations": [
     {
-      "usersId": 1,
+      "userId": 1,
       "firstName": "CASSIE",
       "lastName": "MCKINNEY",
       "email": "mckinney.cassie@gmail.com",
@@ -27,7 +27,7 @@
       "id": 23
     },
     {
-      "usersId": 2,
+      "userId": 2,
       "firstName": "CASSIE",
       "lastName": "MCKINNEY",
       "email": "mckinney.cassie@gmail.com",
@@ -39,20 +39,28 @@
       "startDate": null,
       "endDate": null,
       "id": 24
+    },
+    {
+      "firstName": "Chelsea",
+      "lastName": "Elrod",
+      "email": "celrod0724@gmail.com",
+      "gender": "",
+      "campName": "Abrams Creek Campground",
+      "campType": "",
+      "siteNumber": "55",
+      "paymentType": "",
+      "startDate": null,
+      "endDate": null,
+      "userId": 1,
+      "id": 25
     }
   ],
   "messages": [
     {
-      "userId": 1,
-      "text": "hey this is a test",
-      "timestamp": 1632356493847,
-      "id": 11
-    },
-    {
-      "userId": 1,
-      "text": "The best camping spot I have been to so far is Cades Cove!",
-      "timestamp": 1632360049325,
-      "id": 12
+      "userId": 2,
+      "text": "hey this is another test",
+      "timestamp": 1632445776349,
+      "id": 13
     }
   ]
 }
