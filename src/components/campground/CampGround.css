@@ -1,10 +1,9 @@
-.navbar {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: right;
+.park {
+    border: solid gray;
+    font-family:Arial, Helvetica, sans-serif;
+    background: black;
 }
 
-.navbar__item {
-    flex-basis: 20%;
-    list-style-type: none;
+.parks__list {
+    padding: 1em;
 }
