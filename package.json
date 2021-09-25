@@ -7,6 +7,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.1.0",
+    "css": "^3.0.0",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.0-beta.6",
     "react-discussion-board": "^1.0.5",
@@ -14,7 +15,8 @@
     "react-redux": "^7.2.5",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
-    "semantic-ui-css": "^2.4.1",
+    "semantic": "0.0.1",
+    "ui": "^0.2.4",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

@@ -1,12 +1,13 @@
 .message {
     padding: 30px;
     background:rgb(109, 122, 134);
-    margin-top: 40px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-top: 3em;
+    margin-right: 3em;
+    margin-bottom: 0em;
+    margin-left: 3em;
     border-radius: 50px;
     font-family: 'Lucida Sans Unicode', 'Arial', serif;
-    color:khaki;
+    color:khaki; 
     
 
 }

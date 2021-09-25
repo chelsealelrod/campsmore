@@ -12,6 +12,11 @@
 .reservations {
     justify-content: justify;
     padding:2em;
+    
+}
+
+.camp__Name {
+    color:lightcyan;
 }
 
 .reservForm {
@@ -24,6 +29,9 @@
     margin-right: 3em;
     margin-left: 3em;
 }
+.thank_you {
+    color:lightcyan;
+}
 
 .trip-start {
     background:lightgray;
@@ -33,7 +41,7 @@
     background:lightgray;
 }
 
-.btn btn-primary {
+button.btn.btn-primary {
     background-color:darkslategray;
 }
 

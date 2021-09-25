@@ -36,7 +36,6 @@ export const CampGroundList = () => {
                     return <CampDetail key={park.id} park={park} />
                 })
             }
-        
         </section>
      
         </>

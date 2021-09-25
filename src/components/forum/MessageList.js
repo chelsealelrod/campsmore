@@ -37,6 +37,9 @@ export const MessageList = () => {
           return (
             <div className="message" id={`message--${message.id}`}>
               {message.text}
+              <br></br>
+              <br></br>
+              <br></br>
               <button className="edit__button" onClick={() => {
                 history.push(`/forum/edit/${message.id}`)
               }}>Edit</button>

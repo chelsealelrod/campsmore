@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from "react"
 import { MessageContext } from "./MessageProvider"
 import { useHistory, useParams } from "react-router-dom"
 import "./Message.css"
-import "semantic-ui-react"
 
 
 export const MessageForm = () => {

@@ -142,7 +142,7 @@ export const ReservationForm = () => {
         </div>
       </fieldset>
       <fieldset>
-        <div>
+        <div className="form-group">
           <label htmlFor="paymentType">Payment Type</label>
           <input type="text" id="payment" required autoFocus className="form-control" 
           value={ reservation.paymentType }
