@@ -28,9 +28,8 @@ export const ReservationList = () => {
             <div className="reservation" id={`reservation--${reservation.id}`}>
               { parseInt(localStorage.getItem("camp__user"))}
               <h3 className="form__list__header">Submitted Successfully! </h3>
-              <div class="thank_you">Thank you,<br></br>
+              <div class="thank_you">Thank you,
               <p>{ reservation.firstName }</p>
-              </div>
               <p>{ reservation.lastName }</p>
               <p>{ reservation.email }</p>
               {/* <p>{ reservation.gender }</p> */}
@@ -41,6 +40,7 @@ export const ReservationList = () => {
               { reservation.paymentType }
               { reservation.startDate }
               { reservation.endDate }
+            </div>
             </div>
           )
         })

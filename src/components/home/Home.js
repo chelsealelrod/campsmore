@@ -7,7 +7,7 @@ return (
 <>
         <div className="home">
 
-  <h2>Welcome to Camp S'More! Browse from several different
+  <h2 className="home__intro">Welcome to Camp S'More! Browse from several different
    CampGrounds, make a quick reservation to a Campsite, 
    or find out any info on all things Camping!</h2>
    

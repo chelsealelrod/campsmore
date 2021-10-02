@@ -20,7 +20,9 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   font-size: 18px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+  margin-top: 5%;
+  padding: 0em;
+  
 }
 
 p {

@@ -29,7 +29,7 @@ export const MessageList = () => {
   return (
 
     <section className="messages">
-      <button onClick={() => history.push("/forum/create")}>
+      <button className="add__message"onClick={() => history.push("/forum/create")}>
         Add Message
       </button>
       {

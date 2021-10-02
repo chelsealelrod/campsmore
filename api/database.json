@@ -9,6 +9,16 @@
       "id": 2,
       "userName": "cassielmckinney",
       "email": "mckinney.cassie@gmail.com"
+    },
+    {
+      "email": "nate@garrett.com",
+      "name": "Nathan Garrett",
+      "id": 3
+    },
+    {
+      "email": "michael@scott.com",
+      "name": "Michael Scott",
+      "id": 4
     }
   ],
   "reservations": [
@@ -39,20 +49,34 @@
       "endDate": null,
       "userId": 1,
       "id": 25
+    },
+    {
+      "firstName": "CASSIE",
+      "lastName": "MCKINNEY",
+      "email": "mckinney.cassie@gmail.com",
+      "gender": "",
+      "campName": "Abrams Creek Campground",
+      "campType": "",
+      "siteNumber": "45",
+      "paymentType": "",
+      "startDate": null,
+      "endDate": null,
+      "userId": 1,
+      "id": 26
     }
   ],
   "messages": [
     {
       "userId": 1,
-      "text": "hey this is a test",
-      "timestamp": 1632454839602,
-      "id": 14
-    },
-    {
-      "userId": 1,
       "text": "Has anyone been to Cades Cove in the winter?",
       "timestamp": 1632538781415,
       "id": 15
+    },
+    {
+      "userId": 1,
+      "text": "What is the best thing to bring camping?",
+      "timestamp": 1632581254589,
+      "id": 16
     }
   ]
 }

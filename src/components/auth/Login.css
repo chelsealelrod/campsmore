@@ -18,16 +18,20 @@ fieldset {
     margin: 0 auto;
     text-align: center;
     font-size: 2em;
-  
     background-color: transparent;
     background-repeat: no-repeat;
 
 }
 
-.form--login > fieldset > input[type="email"],
-.form--login > fieldset > input[type="password"] {
-    width: 20em;
+.form--login > fieldset > input[type="email"] {
+    width: 25em;
+    padding: 0em;
    
+}
+
+.form--register--login {
+    display: inline-block;
+    
 }
 
 .label--login {

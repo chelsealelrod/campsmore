@@ -1,4 +1,3 @@
-import { parksKey } from "../../apikeys";
 import { CampGroundContext } from "./CampProvider"
 import React, { useContext, useEffect, useState } from "react"
 // import { useHistory, Link } from "react-router-dom";
@@ -6,9 +5,9 @@ import React, { useContext, useEffect, useState } from "react"
 
 
 export const CampSearch = () => {
-  const { getTnParks, setSearchTerms, searchResults } = useContext(CampGroundContext)
+  const { setSearchTerms } = useContext(CampGroundContext)
   // const history = useHistory()
-  const [parks, setParks] = useState([])
+  // const [parks, setParks] = useState([])
 
   // const searchResults = (event) => {
   //   event.preventDefault()
@@ -23,7 +22,7 @@ export const CampSearch = () => {
     <>
               <input type="text"
                 className="input--wide"
-                onKeyUp={(event) => searchResults(event.target.value)}
+                onKeyUp={(event) => setSearchTerms(event.target.value)}
                 placeholder="Search for a Camp... " />
                  { <button onClick={setSearchTerms}>Search</button> } 
               {/* <input type="text"
@@ -32,21 +31,21 @@ export const CampSearch = () => {
                 placeholder="Search for a CampGround... " />
                 <button onClick={setSearchTerms}>Search</button> */}
     
-      <div>
+      {/* <div>
         {
           parks.map(park =>
             <div>
               {parks.name}
-              {/* Camp Search:
+              Camp Search:
               <input type="text"
                 className="input--wide"
                 onKeyUp={(event) => setSearchTerms(event.target.value)}
                 placeholder="Search for a CampGround... " />
-                 { <button onClick={setSearchTerms}>Search</button> }  */}
+                 { <button onClick={setSearchTerms}>Search</button> } 
               </div>
       )
           }
-    </div>
+    </div> */}
       </>
     )
   }

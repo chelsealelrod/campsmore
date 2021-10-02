@@ -1,13 +1,16 @@
-import React, { useState, useEffect, createContext } from "react"
+import React, { useState, createContext } from "react"
 import { parksKey } from "../../apikeys"
 
 
 export const CampGroundContext = createContext()
 
 // export const NpsUrl = `https://developer.nps.gov/api/v1/campgrounds?api_key=${parksKey}`;
+
+
 export const CampProvider = (props) => {
     const [parks, setParks] = useState([])
     const [searchParks, setSearchTerms] = useState("")
+
 
     const getTnParks = () => {
         return fetch(`https://developer.nps.gov/api/v1/campgrounds?stateCode=TN&api_key=${parksKey}`)

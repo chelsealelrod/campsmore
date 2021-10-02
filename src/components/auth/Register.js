@@ -1,12 +1,11 @@
 import React, { useRef } from "react"
-import { useHistory } from "react-router-dom"
+import { useHistory, Link } from "react-router-dom"
 import "./Login.css"
 
 export const Register = (props) => {
     const firstName = useRef()
     const lastName = useRef()
     const email = useRef()
-    const verifyPassword = useRef()
     const conflictDialog = useRef()
     const history = useHistory()
 
@@ -56,7 +55,7 @@ export const Register = (props) => {
                 <button className="button--close" onClick={e => conflictDialog.current.close()}>Close</button>
             </dialog>
 
-            <form className="form--login" onSubmit={handleRegister}>
+            <form className="form--register--login" onSubmit={handleRegister}>
                 <h1 className="h3 mb-3 font-weight-normal">Please Register for Camp S'more</h1>
                 <fieldset>
                     <label htmlFor="firstName"> First Name </label>
@@ -71,6 +70,7 @@ export const Register = (props) => {
                     <input ref={email} type="email" name="email" className="form-control" placeholder="Email address" required />
                 </fieldset>
                 <fieldset>
+                {/* <Link to="/home">Sign in</Link> */}
                     <button type="submit"> Sign in </button>
                 </fieldset>
             </form>
