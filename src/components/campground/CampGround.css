@@ -2,8 +2,23 @@
     border: solid gray;
     font-family:Arial, Helvetica, sans-serif;
     background: black;
+    padding: 1.5em;
+    margin-top: 1.5em;
 }
 
 .parks__list {
     padding: 1em;
+}
+
+.park__name {
+    padding: 0em;
+    margin-top: 0em;
+}
+
+.button__submit {
+    background:darkslategrey;
+}
+
+.search__button {
+    background: darkslategrey;
 }

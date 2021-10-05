@@ -2,29 +2,42 @@
     font-size: 2.5rem;
     margin-top: 400%;
     padding: 100em;
+    text-shadow: 3px 3px 3px black;
 }
 
 fieldset {
     min-width: 0em;
-    padding: 30em 1em;
+    padding: 1em 1em;
     margin: 1em;
     border: 1em;
+    text-shadow: 3px 3px 3px black;
     
 }
 
 .form--login {
     display: inline-block;
-    padding: 5em;
+    padding: 0em;
     margin: 0 auto;
     text-align: center;
     font-size: 2em;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    text-shadow: 3px 3px 3px black;
+    
 
 }
 
-.form--login > fieldset > input[type="email"],
-.form--login > fieldset > input[type="password"] {
-    width: 20em;
+.form--login > fieldset > input[type="email"] {
+    width: 25em;
+    padding: 0em;
+    
    
+}
+
+.form--register--login {
+    display: inline-block;
+    
+    
 }
 
 .label--login {
@@ -59,16 +72,6 @@ fieldset {
     margin-bottom: 4em;
 }
 
-.form--login {
-    min-height: 4rem;
-    min-width: 2rem;
-    margin-bottom: 3em;
-    background-color: hsla(0,0%,100%,0.40);
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-  
-}
-
 .button--close {
     position: relative;
     bottom: -2rem;
@@ -90,17 +93,19 @@ fieldset {
 }
 
 .logo {
-    width: 30%;
-    height: 40%;
+    width: 40%;
+    height: 50%;
     margin-top: 3rem;
-    border-radius: 10em;
+    border-radius: 13em;
+    margin-left: 0em;
 }
 
 .link--register {
-    margin-top: 7em;
-    margin-bottom: 0em;
-    padding: 5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0em;
     justify-content: center;
+    text-shadow: 3px 3px 3px black;
 }
 
 .button--area {
@@ -108,4 +113,8 @@ fieldset {
     margin-bottom: 1em;
     padding: 1em;
     justify-content: center;
+}
+
+.sign__in__button {
+    background: darkslategray;
 }

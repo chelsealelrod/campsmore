@@ -9,25 +9,46 @@
       "id": 2,
       "userName": "cassielmckinney",
       "email": "mckinney.cassie@gmail.com"
+    },
+    {
+      "email": "nate@garrett.com",
+      "name": "Nathan Garrett",
+      "id": 3
+    },
+    {
+      "email": "michael@scott.com",
+      "name": "Michael Scott",
+      "id": 4
+    },
+    {
+      "email": "ben@biles.com",
+      "name": "Ben Biles",
+      "id": 5
+    },
+    {
+      "email": "brittany@jones.com",
+      "name": "Brittany Jones",
+      "id": 6
+    },
+    {
+      "email": "scott@piere.com",
+      "name": "Scott Piere",
+      "id": 7
+    },
+    {
+      "email": "joe@foster.com",
+      "name": "Joe Foster",
+      "id": 8
+    },
+    {
+      "email": "cindy@mckinney.com",
+      "name": "Cindy McKinney",
+      "id": 9
     }
   ],
   "reservations": [
     {
-      "usersId": 1,
-      "firstName": "CASSIE",
-      "lastName": "MCKINNEY",
-      "email": "mckinney.cassie@gmail.com",
-      "gender": "",
-      "campName": "Abrams Creek Campground",
-      "campType": "",
-      "siteNumber": "20",
-      "paymentType": "",
-      "startDate": null,
-      "endDate": null,
-      "id": 23
-    },
-    {
-      "usersId": 2,
+      "userId": 2,
       "firstName": "CASSIE",
       "lastName": "MCKINNEY",
       "email": "mckinney.cassie@gmail.com",
@@ -39,20 +60,48 @@
       "startDate": null,
       "endDate": null,
       "id": 24
+    },
+    {
+      "firstName": "Chelsea",
+      "lastName": "Elrod",
+      "email": "celrod0724@gmail.com",
+      "gender": "",
+      "campName": "Abrams Creek Campground",
+      "campType": "",
+      "siteNumber": "55",
+      "paymentType": "",
+      "startDate": null,
+      "endDate": null,
+      "userId": 1,
+      "id": 25
+    },
+    {
+      "firstName": "CASSIE",
+      "lastName": "MCKINNEY",
+      "email": "mckinney.cassie@gmail.com",
+      "gender": "",
+      "campName": "Abrams Creek Campground",
+      "campType": "",
+      "siteNumber": "45",
+      "paymentType": "",
+      "startDate": null,
+      "endDate": null,
+      "userId": 1,
+      "id": 26
     }
   ],
   "messages": [
     {
       "userId": 1,
-      "text": "hey this is a test",
-      "timestamp": 1632356493847,
-      "id": 11
+      "text": "What is the best thing to bring camping?",
+      "timestamp": 1632581254589,
+      "id": 16
     },
     {
       "userId": 1,
-      "text": "The best camping spot I have been to so far is Cades Cove!",
-      "timestamp": 1632360049325,
-      "id": 12
+      "text": "hey where should I go camping this weekend?",
+      "timestamp": 1633206569307,
+      "id": 17
     }
   ]
 }

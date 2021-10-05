@@ -1,32 +1,47 @@
 .message {
-    padding: 30px;
+    padding: 0em;
     background:rgb(109, 122, 134);
-    margin-top: 40px;
-    margin-right: 50px;
-    margin-left: 50px;
-    border-radius: 50px;
+    margin-top: 3em;
+    margin-right: 3em;
+    margin-bottom: 0em;
+    margin-left: 3em;
+    border-radius: 10px;
     font-family: 'Lucida Sans Unicode', 'Arial', serif;
-    color:khaki;
+    color:khaki; 
+    font-size: 18px;
     
 
 }
 
+.messages {
+    padding: 0em;
+}
+/* 
+.add__message {
+    padding:3em;
+} */
+
 .message__title {
     text-align: center;
-    margin: 10px;
-    padding: 12px;
-    font-size: 2rem;
+    margin: 0em;
+    padding: 0em;
+    font-size: 27px;
     color:lightgoldenrodyellow;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .messageForm__title {
     text-align:justify;
     font-family:sans-serif;
     color: lightgoldenrodyellow;
+    padding: 0em;
+    margin-top: 0em;
 }
 
-.btn btn-primary {
+.btn.btn-primary {
     background:darkslategray;
+    padding: 2px;
+    margin: 1em 1em 1em;
 }
 
 .delete__button {
@@ -37,8 +52,9 @@
     background:darkslategray;
 }
 
-.form-control {
+text.form-control {
     background:lightgray;
+    padding: 2px;
     
     
 }
