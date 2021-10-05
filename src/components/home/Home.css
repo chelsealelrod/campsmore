@@ -1,14 +1,16 @@
+
 .home {
     display:flex;
     justify-content:center;
     text-align:center;
     color:rgb(128, 78, 21);
-    padding: 1em;
+    padding: 0em;
     font-size: 4rem;
     margin-left: 4em;
     margin-right: 4em;
     margin-bottom: 0em;
     background-color: rgba(155, 133, 133, 0.4);
+    
 }
 
 .camping__tip__links {
@@ -17,7 +19,7 @@
     text-align:center;
     flex-direction: column;
     margin: 0em 2em 3em;
-    padding: 1em;
+    padding: 0em;
     background-color: rgba(155, 133, 133, 0.4);
 }
 

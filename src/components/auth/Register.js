@@ -35,8 +35,8 @@ export const Register = (props) => {
                         .then(res => res.json())
                         .then(createdUser => {
                             if (createdUser.hasOwnProperty("id")) {
-                                localStorage.setItem("kennel_customer", createdUser.id)
-                                history.push("/")
+                                localStorage.setItem("camp__user", createdUser.id)
+                                history.push("/home")
                             }
                         })
                 }
@@ -71,7 +71,7 @@ export const Register = (props) => {
                 </fieldset>
                 <fieldset>
                 {/* <Link to="/home">Sign in</Link> */}
-                    <button type="submit"> Sign in </button>
+                    <button className ="sign__in__button"type="submit"> Sign in </button>
                 </fieldset>
             </form>
         </main>

@@ -28,7 +28,6 @@
     font-size: 27px;
     color:lightgoldenrodyellow;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    border: solid grey;
 }
 
 .messageForm__title {
@@ -53,8 +52,9 @@
     background:darkslategray;
 }
 
-.form-control {
+text.form-control {
     background:lightgray;
+    padding: 2px;
     
     
 }

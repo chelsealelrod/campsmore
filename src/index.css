@@ -5,11 +5,13 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 
 }
 
 .code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    /* text-shadow: #FC0 1px 0 10px; */
     
 }

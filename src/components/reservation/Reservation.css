@@ -20,17 +20,22 @@
 }
 
 .reservForm {
-    flex-basis:20%;
+    flex-basis:10%;
     justify-content: justify;
     border:solid gray;
     margin-bottom: 4em;
     border:solid dimgray;
-    padding: 3em;
-    margin-right: 3em;
-    margin-left: 3em;
+    padding: 0em;
+    margin-right: 1em;
+    margin-left: 1em;
 }
 .thank_you {
     color:lightcyan;
+    border: solid black;
+    text-shadow: 3px 3px 3px black;
+    padding: 1em;
+    background-color: rgba(155, 133, 133, 0.4);
+    
 }
 
 .trip-start {
@@ -45,6 +50,10 @@
     background-color:darkslategray;
 }
 
+.reservation__button {
+    background: darkslategray;
+}
+
 .ReservForm__title {
     padding: 1em;
     margin: 1em 0em 1em;
@@ -56,8 +65,13 @@
 }
 
 .form-group {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
     font-size: 20px;
+
 }
+
 
 .form-control {
     font-size: 20px;

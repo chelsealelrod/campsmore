@@ -19,7 +19,7 @@ export const ReservationList = () => {
   return (
   
     <section className="reservations">
-        <button onClick={() => history.push("/reservations/create")}>
+        <button className="reservation__button" onClick={() => history.push("/reservations/create")}>
                 Add Reservation
             </button>
       {
@@ -29,12 +29,12 @@ export const ReservationList = () => {
               { parseInt(localStorage.getItem("camp__user"))}
               <h3 className="form__list__header">Submitted Successfully! </h3>
               <div class="thank_you">Thank you,
-              <p>{ reservation.firstName }</p>
-              <p>{ reservation.lastName }</p>
-              <p>{ reservation.email }</p>
+              <p>{ reservation.firstName }<br></br>
+              { reservation.lastName }<br></br>
+              { reservation.email }</p>
               {/* <p>{ reservation.gender }</p> */}
-              <p>for your reservation at:</p>
-              <p className="camp__Name">{ reservation.campName }</p>
+              <p className="camp__Name">for your reservation at:<br></br>
+              { reservation.campName }</p>
               {/* { reservation.campType } */}
               <p>Camp Site: { reservation.siteNumber }</p>
               { reservation.paymentType }

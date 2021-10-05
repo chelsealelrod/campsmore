@@ -9,3 +9,16 @@
 .parks__list {
     padding: 1em;
 }
+
+.park__name {
+    padding: 0em;
+    margin-top: 0em;
+}
+
+.button__submit {
+    background:darkslategrey;
+}
+
+.search__button {
+    background: darkslategrey;
+}

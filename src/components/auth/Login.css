@@ -2,6 +2,7 @@
     font-size: 2.5rem;
     margin-top: 400%;
     padding: 100em;
+    text-shadow: 3px 3px 3px black;
 }
 
 fieldset {
@@ -9,28 +10,33 @@ fieldset {
     padding: 1em 1em;
     margin: 1em;
     border: 1em;
+    text-shadow: 3px 3px 3px black;
     
 }
 
 .form--login {
     display: inline-block;
-    padding: 5em;
+    padding: 0em;
     margin: 0 auto;
     text-align: center;
     font-size: 2em;
     background-color: transparent;
     background-repeat: no-repeat;
+    text-shadow: 3px 3px 3px black;
+    
 
 }
 
 .form--login > fieldset > input[type="email"] {
     width: 25em;
     padding: 0em;
+    
    
 }
 
 .form--register--login {
     display: inline-block;
+    
     
 }
 
@@ -99,6 +105,7 @@ fieldset {
     margin-bottom: 1em;
     padding: 0em;
     justify-content: center;
+    text-shadow: 3px 3px 3px black;
 }
 
 .button--area {
@@ -106,4 +113,8 @@ fieldset {
     margin-bottom: 1em;
     padding: 1em;
     justify-content: center;
+}
+
+.sign__in__button {
+    background: darkslategray;
 }

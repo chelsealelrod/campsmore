@@ -33,7 +33,7 @@ export const CampDetail = (props) => {
         <div className="park__reservationInfo">Reservation Info:<br></br> { props.park.reservationInfo }</div><br></br>
         <div className="park__regulations">Regulations:<br></br> { props.park.regulationsOverview }</div>
         <div className="park__amenities">Amenities:<br></br> {props.park.amenities.audioDescription }</div><br></br>
-        <button onClick={() => history.push("/reservations/create")}>
+        <button className="button__submit" onClick={() => history.push("/reservations/create")}>
                 Make Reservation
             </button>
         {/* <div className="park__operatingHours">Operating Hours: { props.park.operatingHours[0] }</div> */}

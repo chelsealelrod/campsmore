@@ -24,7 +24,7 @@ export const CampSearch = () => {
                 className="input--wide"
                 onKeyUp={(event) => setSearchTerms(event.target.value)}
                 placeholder="Search for a Camp... " />
-                 { <button onClick={setSearchTerms}>Search</button> } 
+                 { <button className="search__button" onClick={setSearchTerms}>Search</button> } 
               {/* <input type="text"
                 className="input--wide"
                 onKeyUp={(event) => searchResults(event.target.value)}

@@ -19,6 +19,31 @@
       "email": "michael@scott.com",
       "name": "Michael Scott",
       "id": 4
+    },
+    {
+      "email": "ben@biles.com",
+      "name": "Ben Biles",
+      "id": 5
+    },
+    {
+      "email": "brittany@jones.com",
+      "name": "Brittany Jones",
+      "id": 6
+    },
+    {
+      "email": "scott@piere.com",
+      "name": "Scott Piere",
+      "id": 7
+    },
+    {
+      "email": "joe@foster.com",
+      "name": "Joe Foster",
+      "id": 8
+    },
+    {
+      "email": "cindy@mckinney.com",
+      "name": "Cindy McKinney",
+      "id": 9
     }
   ],
   "reservations": [
@@ -68,15 +93,15 @@
   "messages": [
     {
       "userId": 1,
-      "text": "Has anyone been to Cades Cove in the winter?",
-      "timestamp": 1632538781415,
-      "id": 15
-    },
-    {
-      "userId": 1,
       "text": "What is the best thing to bring camping?",
       "timestamp": 1632581254589,
       "id": 16
+    },
+    {
+      "userId": 1,
+      "text": "hey where should I go camping this weekend?",
+      "timestamp": 1633206569307,
+      "id": 17
     }
   ]
 }

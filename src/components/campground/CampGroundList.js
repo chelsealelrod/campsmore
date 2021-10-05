@@ -27,7 +27,7 @@ useEffect(() => {
         // If the search field is blank, display all parks
         setFiltered(parks)
       }
-    }, [searchParks])
+    }, [searchParks,getTnParks])
 
 
     return (
