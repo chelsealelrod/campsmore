@@ -44,6 +44,16 @@
       "email": "cindy@mckinney.com",
       "name": "Cindy McKinney",
       "id": 9
+    },
+    {
+      "email": "nora@banks.com",
+      "name": "Nora Banks",
+      "id": 10
+    },
+    {
+      "email": "cindymckinney313@gmail.com",
+      "name": "Cindy Mckinney",
+      "id": 11
     }
   ],
   "reservations": [
@@ -93,15 +103,21 @@
   "messages": [
     {
       "userId": 1,
-      "text": "What is the best thing to bring camping?",
-      "timestamp": 1632581254589,
-      "id": 16
-    },
-    {
-      "userId": 1,
       "text": "hey where should I go camping this weekend?",
       "timestamp": 1633206569307,
       "id": 17
+    },
+    {
+      "userId": 1,
+      "text": "Are there any good hiking trails at certain Campgrounds?",
+      "timestamp": 1633748576365,
+      "id": 18
+    },
+    {
+      "userId": 1,
+      "text": "Trout fishing is a lot of fun at some of the campgrounds.",
+      "timestamp": 1633748941796,
+      "id": 19
     }
   ]
 }

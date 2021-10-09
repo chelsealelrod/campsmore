@@ -1,9 +1,9 @@
 .message {
-    padding: 0em;
+    padding: 1em;
     background:rgb(109, 122, 134);
     margin-top: 3em;
     margin-right: 3em;
-    margin-bottom: 0em;
+    margin-bottom: 1em;
     margin-left: 3em;
     border-radius: 10px;
     font-family: 'Lucida Sans Unicode', 'Arial', serif;
@@ -16,10 +16,10 @@
 .messages {
     padding: 0em;
 }
-/* 
+
 .add__message {
-    padding:3em;
-} */
+    padding:0em;
+}
 
 .message__title {
     text-align: center;
