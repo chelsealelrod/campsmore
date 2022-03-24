@@ -16,7 +16,6 @@ External API was utilized in the CampGround list and search function in the app 
 
 <img width="1347" alt="Screen Shot 2022-03-24 at 12 11 20 PM" src="https://user-images.githubusercontent.com/79339383/159974575-2fa207c1-9b3d-4434-b2f5-9e560d0e0155.png">
 
-<img width="1391" alt="Screen Shot 2022-03-24 at 12 12 28 PM" src="https://user-images.githubusercontent.com/79339383/159974728-2b430ee5-a768-4d6a-a94a-32b0a30bc086.png">
 
 <img width="864" alt="Screen Shot 2022-03-24 at 12 11 36 PM" src="https://user-images.githubusercontent.com/79339383/159974446-1960b491-676d-4bbb-a59c-517f0412cd0c.png">
 
