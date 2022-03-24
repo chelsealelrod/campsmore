@@ -1,4 +1,6 @@
-##Front End Capstone - "Camp S'More"
+
+#Front End Capstone - "Camp S'More"
+
 
 
 Motivation
