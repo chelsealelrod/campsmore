@@ -20,14 +20,13 @@
 }
 
 .reservForm {
-    flex-basis:10%;
-    justify-content: justify;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     border:solid gray;
-    margin-bottom: 4em;
-    border:solid dimgray;
-    padding: 0em;
-    margin-right: 1em;
-    margin-left: 1em;
+    margin: 20px;
+    padding: 1px;
+    background-color: rgba(155, 133, 133, 0.4);
 }
 .thank_you {
     color:lightcyan;
