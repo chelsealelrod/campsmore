@@ -147,8 +147,8 @@ export const ReservationForm = () => {
       <fieldset>
       <div className="form-group">
       <label htmlFor="paymentType">Payment Type</label>
-      <input type ="text" id="payment" required autoFocus className="form-control"
-      value={ reservation.paymentType }
+      <input type ="text" id="payment" name="payment" required autoFocus className="form-control"
+      value={reservation.paymentType}
       placeholder="Payment Type"
       onChange={handleControlledInputChange} />
       </div>

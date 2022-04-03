@@ -54,6 +54,11 @@
       "email": "cindymckinney313@gmail.com",
       "name": "Cindy Mckinney",
       "id": 11
+    },
+    {
+      "email": "john@smith.com",
+      "name": "John Smith",
+      "id": 12
     }
   ],
   "reservations": [
@@ -98,26 +103,60 @@
       "endDate": null,
       "userId": 1,
       "id": 26
+    },
+    {
+      "firstName": "Brittany",
+      "lastName": "Jones",
+      "email": "brittany@jones.com",
+      "gender": "",
+      "campName": "Cades Cove",
+      "campType": "",
+      "siteNumber": "43",
+      "paymentType": "",
+      "startDate": null,
+      "endDate": null,
+      "userId": 1,
+      "id": 27
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "gender": "",
+      "campName": "",
+      "campType": "",
+      "siteNumber": 0,
+      "paymentType": "",
+      "startDate": null,
+      "endDate": null,
+      "userId": 1,
+      "id": 28
     }
   ],
   "messages": [
     {
       "userId": 1,
-      "text": "hey where should I go camping this weekend?",
-      "timestamp": 1633206569307,
-      "id": 17
-    },
-    {
-      "userId": 1,
-      "text": "Are there any good hiking trails at certain Campgrounds?",
-      "timestamp": 1633748576365,
-      "id": 18
-    },
-    {
-      "userId": 1,
       "text": "Trout fishing is a lot of fun at some of the campgrounds.",
       "timestamp": 1633748941796,
       "id": 19
+    },
+    {
+      "userId": 1,
+      "text": "What is the best thing to bring camping?",
+      "timestamp": 1633790933048,
+      "id": 20
+    },
+    {
+      "userId": 1,
+      "text": "What is a good backpacking Tent?",
+      "timestamp": 1648141784006,
+      "id": 21
+    },
+    {
+      "userId": 1,
+      "text": "There are many different types of tents but to bring backpacking you would need a lightweight",
+      "timestamp": 1649017617651,
+      "id": 22
     }
   ]
 }
