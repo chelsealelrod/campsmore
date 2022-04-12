@@ -11,7 +11,6 @@ export const ReservationList = () => {
 
 
   useEffect(() => {
-    console.log("ReservationList: useEffect - getReservations")
     getReservations()
   }, [reservations])
 
