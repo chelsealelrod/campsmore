@@ -7,7 +7,7 @@ import "./Message.css"
 export const MessageForm = () => {
 
 
-  const { addMessage, newMessage, getMessages, getUsersById} = useContext(MessageContext)
+  const { addMessage, newMessage, getMessages, editMessage, getUsersById} = useContext(MessageContext)
   const [isLoading, setIsLoading] = useState(false);
   const [user, setUser] = useState({});
 
@@ -57,6 +57,7 @@ export const MessageForm = () => {
     }
   }
 
+
   return (
     <form className="message">
         <h1 className="message__title">Discussion Board</h1>
@@ -72,7 +73,7 @@ export const MessageForm = () => {
       <button className="btn btn-primary" 
          disabled={isLoading}
          onClick={event => handleSaveForm(event)}>
-       {messageId ? <>Save Message</> : <>Add Message</>}
+       {messageId ?  <>Save Message</> : <>Add Message</>}
        </button>
       </form>
 

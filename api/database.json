@@ -131,6 +131,20 @@
       "endDate": null,
       "userId": 1,
       "id": 28
+    },
+    {
+      "firstName": "Stephanie",
+      "lastName": "Weir",
+      "email": "steph@weir.com",
+      "gender": "",
+      "campName": "Bear Cove",
+      "campType": "",
+      "siteNumber": "12",
+      "paymentType": "",
+      "startDate": null,
+      "endDate": null,
+      "userId": 1,
+      "id": 29
     }
   ],
   "messages": [
@@ -139,12 +153,6 @@
       "text": "Trout fishing is a lot of fun at some of the campgrounds.",
       "timestamp": 1633748941796,
       "id": 19
-    },
-    {
-      "userId": 1,
-      "text": "What is the best thing to bring camping?",
-      "timestamp": 1633790933048,
-      "id": 20
     },
     {
       "userId": 1,
@@ -157,6 +165,12 @@
       "text": "There are many different types of tents but to bring backpacking you would need a lightweight",
       "timestamp": 1649017617651,
       "id": 22
+    },
+    {
+      "userId": 1,
+      "text": "This is a new message for camping",
+      "timestamp": 1649719239449,
+      "id": 23
     }
   ]
 }
