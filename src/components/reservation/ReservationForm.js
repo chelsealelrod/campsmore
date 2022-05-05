@@ -1,8 +1,7 @@
 import React, { useContext, useEffect, useState } from "react"
 import { ReservationContext } from "./ReservationProvider"
 import "./Reservation.css"
-import { useHistory, useParams } from "react-router-dom"
-import { Form, Row, Col, Button } from 'react-bootstrap';
+import { useHistory, useParams } from "react-router-dom";
 
 
 
@@ -106,8 +105,8 @@ export const ReservationForm = () => {
       <fieldset>
       <div className="form-group">
       <label htmlFor="gender">Gender: </label>
-      <select name="gender" id="genderId" className="form-control"
-      value= { reservation.gender }
+      <select name="gender" required autoFocus className="form-control"
+      value={ reservation.gender }
       onChange={handleControlledInputChange}>
       <option value="female">Female</option>
       <option value="male">Male</option>
