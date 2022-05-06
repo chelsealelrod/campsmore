@@ -145,6 +145,20 @@
       "endDate": null,
       "userId": 1,
       "id": 29
+    },
+    {
+      "firstName": "Sarah",
+      "lastName": "Smith",
+      "email": "sarah@smith.com",
+      "gender": "non-binary",
+      "campName": "Bear Cove",
+      "campType": "",
+      "siteNumber": "12",
+      "paymentType": "card",
+      "startDate": null,
+      "endDate": null,
+      "userId": 1,
+      "id": 30
     }
   ],
   "messages": [
