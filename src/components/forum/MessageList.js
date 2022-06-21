@@ -6,7 +6,7 @@ import { useHistory } from "react-router-dom"
 
 export const MessageList = () => {
 
-  const { getMessages, messages, deleteMessage, editMessage } = useContext(MessageContext)
+  const { getMessages, messages, deleteMessage } = useContext(MessageContext)
   const history = useHistory()
   const [message, setMessage] = useState([])
 
@@ -42,11 +42,11 @@ export const MessageList = () => {
               <br></br>
               <br></br>
               <br></br>
-              <button className="edit__button"
-                 onClick={() => {editMessage(message.id)}}>Edit</button>
-              {/* <button className="edit__button" onClick={() => {
+              {/* <button className="edit__button"
+                 onClick={() => {editMessage(message.id)}}>Edit</button> */}
+              <button className="edit__button" onClick={() => {
                 history.push(`/forum/edit/${message.id}`)
-              }}>Edit</button> */}
+              }}>Edit</button>
               <button className="delete__button" onClick={() => handleDelete(message.id)}>Delete</button>
             </div>
           )
