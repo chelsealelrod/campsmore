@@ -36,7 +36,7 @@ export const Login = props => {
                 <button className="button--close" onClick={e => existDialog.current.close()}>Close</button>
             </dialog>
             <div>
-                <img className="logo" src={campsmore} />
+                <img className="logo" src={campsmore} alt="" />
             </div>
             <div className="login">
 

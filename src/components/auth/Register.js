@@ -1,5 +1,5 @@
 import React, { useRef } from "react"
-import { useHistory, Link } from "react-router-dom"
+import { useHistory } from "react-router-dom"
 import "./Login.css"
 
 export const Register = (props) => {

@@ -145,15 +145,23 @@
       "endDate": null,
       "userId": 1,
       "id": 29
+    },
+    {
+      "firstName": "Sarah",
+      "lastName": "Smith",
+      "email": "sarah@smith.com",
+      "gender": "non-binary",
+      "campName": "Bear Cove",
+      "campType": "",
+      "siteNumber": "12",
+      "paymentType": "card",
+      "startDate": null,
+      "endDate": null,
+      "userId": 1,
+      "id": 30
     }
   ],
   "messages": [
-    {
-      "userId": 1,
-      "text": "Trout fishing is a lot of fun at some of the campgrounds.",
-      "timestamp": 1633748941796,
-      "id": 19
-    },
     {
       "userId": 1,
       "text": "What is a good backpacking Tent?",
@@ -165,12 +173,6 @@
       "text": "There are many different types of tents but to bring backpacking you would need a lightweight",
       "timestamp": 1649017617651,
       "id": 22
-    },
-    {
-      "userId": 1,
-      "text": "This is a new message for camping",
-      "timestamp": 1649719239449,
-      "id": 23
     }
   ]
 }

@@ -1,8 +1,7 @@
 import React, { useContext, useEffect, useState } from "react"
 import { ReservationContext } from "./ReservationProvider"
 import "./Reservation.css"
-import { useHistory, useParams } from "react-router-dom"
-import { Form, Row, Col, Button } from 'react-bootstrap';
+import { useHistory, useParams } from "react-router-dom";
 
 
 
@@ -33,16 +32,9 @@ export const ReservationForm = () => {
 
   useEffect(() => {
     getReservations()
-  }, [])
+  }, [reservation])
 
-  const handleControlledInputChange = (event) => {
 
-    const newReservation = { ...reservation }
-
-    newReservation[event.target.id] = event.target.value
-
-    setReservation(newReservation)
-  }
 
   const handleSaveForm = (event) => {
     event.preventDefault()
@@ -73,6 +65,65 @@ export const ReservationForm = () => {
     }
   }
 
+  const handleControlledFirstName = (event) => {
+    const newReservation = { ...reservation }
+    newReservation.firstName = event.target.value
+    setReservation(newReservation);
+  };
+
+  const handleControlledLastName = (event) => {
+    const newReservation = { ...reservation }
+    newReservation.lastName = event.target.value;
+    setReservation(newReservation);
+  };
+
+  const handleControlledEmail = (event) => {
+    const newReservation = { ...reservation }
+    newReservation.email = event.target.value;
+    setReservation(newReservation);
+  };
+
+  const handleControlledGender = (event) => {
+    const newReservation = { ...reservation }
+    newReservation.gender = event.target.value;
+    setReservation(newReservation);
+  };
+
+  const handleControlledCampName = (event) => {
+    const newReservation = { ...reservation }
+    newReservation.campName = event.target.value;
+    setReservation(newReservation);
+  };
+
+  const handleControlledSiteNumber = (event) => {
+    const newReservation = { ...reservation }
+    newReservation.siteNumber = event.target.value;
+    setReservation(newReservation);
+  };
+
+  const handleControlledCampType = (event) => {
+    const newReservation = { ...reservation }
+    newReservation.campType = event.target.value;
+    setReservation(newReservation);
+  };
+
+  const handleControlledPaymentType = (event) => {
+    const newReservation = { ...reservation }
+    newReservation.paymentType = event.target.value;
+    setReservation(newReservation);
+  };
+
+  const handleControlledStartDate = (event) => {
+    const newReservation = { ...reservation }
+    newReservation.startDate = event.target.value;
+    setReservation(newReservation);
+  };
+
+  const handleControlledEndDate = (event) => {
+    const newReservation = { ...reservation }
+    newReservation.endDate = event.target.value;
+    setReservation(newReservation);
+  };
 
 
 
@@ -85,7 +136,7 @@ export const ReservationForm = () => {
           <label htmlFor="name">First Name:</label>
           <input type="text" id="firstName" required autoFocus className="form-control"
             placeholder="First name" value={reservation.firstName}
-            onChange={handleControlledInputChange} />
+            onChange={handleControlledFirstName} />
         </div>
       </fieldset>
       <fieldset>
@@ -93,22 +144,22 @@ export const ReservationForm = () => {
           <label htmlFor="name">Last Name:</label>
           <input type="text" id="lastName" required autoFocus className="form-control"
             placeholder="Last name" value={reservation.lastName}
-            onChange={handleControlledInputChange} />
+            onChange={handleControlledLastName} />
         </div>
       </fieldset>
       <fieldset>
       <div className="form-group">
       <label htmlFor="email">Email: </label>
       <input type ="text" id="email" className="form-control" value={reservation.email}
-      onChange={handleControlledInputChange} />
+      onChange={handleControlledEmail} />
       </div>
     </fieldset>
       <fieldset>
       <div className="form-group">
       <label htmlFor="gender">Gender: </label>
-      <select name="gender" id="genderId" className="form-control"
-      value= { reservation.gender }
-      onChange={handleControlledInputChange}>
+      <select name="gender" required autoFocus className="form-control"
+      value={ reservation.gender }
+      onChange={handleControlledGender}>
       <option value="female">Female</option>
       <option value="male">Male</option>
       <option value="non-binary">Non-Binary</option>
@@ -121,7 +172,7 @@ export const ReservationForm = () => {
       <input type ="text" id="campName" required autoFocus className="form-control"
       value= {reservation.campName}
       placeholder="Camp name"
-      onChange={handleControlledInputChange} />
+      onChange={handleControlledCampName} />
       </div>
       </fieldset>
       <fieldset>
@@ -130,14 +181,14 @@ export const ReservationForm = () => {
       <input type ="text" id="siteNumber" required autoFocus className="form-control"
       value= {reservation.siteNumber}
       placeholder="Camp Site Number"
-      onChange={handleControlledInputChange} />
+      onChange={handleControlledSiteNumber} />
       </div>
       </fieldset>
       <fieldset>
       <div>
       <label htmlFor="campType">Camp Type</label><br></br>
       <input type ="checkbox" id="type" name="campType" value={reservation.campType}
-      onChange={handleControlledInputChange} />
+      onChange={handleControlledCampType} />
       <label htmlFor="tent">Tent</label>
       <input type ="checkbox" id="type" name="campType" value="campType" />
       <label htmlFor="RvCamper">RV/Camper</label>
@@ -150,7 +201,7 @@ export const ReservationForm = () => {
       <input type ="text" id="payment" name="payment" required autoFocus className="form-control"
       value={reservation.paymentType}
       placeholder="Payment Type"
-      onChange={handleControlledInputChange} />
+      onChange={handleControlledPaymentType} />
       </div>
 
       </fieldset>
@@ -159,14 +210,14 @@ export const ReservationForm = () => {
       <label for="start">Start date: </label>
 
       <input type ="date" id="start" className="trip-start"
-      onChange={handleControlledInputChange}
+      onChange={handleControlledStartDate}
       value= {reservation.startDate}
       min="2021-10-01" max="2022-12-31" />
 
       <label for="start">End date: </label>
 
       <input type ="date" id="end" className="trip-end"
-      onChange={handleControlledInputChange}
+      onChange={handleControlledEndDate}
       value={reservation.endDate}
       min="2021-10-01" max="2022-12-31" />
 
