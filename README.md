@@ -5,7 +5,9 @@
 
 ### Motivation
 
-I wanted to create an application that will help those who like camping and want to easily search for a camp ground and make reservations, as well as have a message board to communicate with other campers. I really enjoy the outdoors, hiking and camping, and although there are already a ton of other apps already created about the same, I enjoyed making my own version and hope that other campers could find it useful to them.
+Camp S'More was created to help outdoor lovers easily search for campgrounds, make reservations, and connect with fellow campers through a message board. I designed this app to combine my passion for hiking and the outdoors with love of building meaningful user experiences.
+
+This project was originally developed during my time at Nashville Software School, and as of May 2025, I've revisited it to refelect my growth as a developer and reignite my excitement for personal projects.
 
 ### Planning
 [ERD](https://dbdiagram.io/d/61303376825b5b0146ef72fd)
