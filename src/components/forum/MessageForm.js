@@ -7,10 +7,9 @@ import "./Message.css"
 export const MessageForm = () => {
 
 
-  const { addMessage, newMessage, getMessages, editMessage, getUsersById} = useContext(MessageContext)
+  const { addMessage, newMessage, getMessages, editMessage, getUsersById, messages} = useContext(MessageContext)
   const [isLoading, setIsLoading] = useState(false);
   const [user, setUser] = useState({});
-
 
 
   const [message, setMessage] = useState({
@@ -24,8 +23,17 @@ export const MessageForm = () => {
   const history = useHistory();
 
   useEffect(() => {
-    getMessages()
-  }, [])
+    getMessages().then((messages) => {
+      if (messageId) {
+        const existingMessage = messages.find(
+          (m) => m.id === parseInt(messageId)
+        )
+        if (existingMessage) {
+          setMessage(existingMessage)
+        }
+      }
+    })
+  }, [messageId])
 
   const handleMessageInputChange = (event) => {
 
@@ -48,14 +56,16 @@ export const MessageForm = () => {
         timestamp: Date.now()
         
       }
+      if (messageId) {
+        newMessage.id = parseInt(messageId)
+        editMessage(newMessage).then(() => history.push("/forum"))
+      } else {
+        addMessage(newMessage).then(() => history.push("/forum"))
+      }
 
-      addMessage(newMessage)
-        .then(() => {
-          history.push("/forum")
           setIsLoading(false)
-        })
+        }
     }
-  }
 
 
   return (

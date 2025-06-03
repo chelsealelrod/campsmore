@@ -11,7 +11,6 @@ export const MessageList = () => {
   const [message, setMessage] = useState([])
 
 
-
   useEffect(() => {
     // const thisMessage = messages.find(m => m.id === parseInt(messageId)) || {messages: {}}
     // setMessage(thisMessage)
@@ -25,8 +24,6 @@ export const MessageList = () => {
       })
   }
 
-  
-
 
   return (
 
@@ -38,8 +35,9 @@ export const MessageList = () => {
         messages.map(message => {
           return (
             <div className="message" id={`message--${message.id}`}>
-              {message.text}
+              <p>{message.text}</p>
               <br></br>
+              <small>{new Date(message.timestamp).toLocaleString()}</small>
               <br></br>
               <br></br>
               {/* <button className="edit__button"
