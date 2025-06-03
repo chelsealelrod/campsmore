@@ -8,11 +8,6 @@ export const CampGroundList = () => {
     const history = useHistory()
     const [ filteredParks, setFiltered] = useState([])
     const { parks, getTnParks, searchParks } = useContext(CampGroundContext)
-    
-    // const { searchParks } = (event) => {
-    //     setSearchTerms(event.target.value)
-    //     getTnParks()
-    // }
    
 
     useEffect(() => {

@@ -212,14 +212,14 @@ export const ReservationForm = () => {
       <input type ="date" id="start" className="trip-start"
       onChange={handleControlledStartDate}
       value= {reservation.startDate}
-      min="2021-10-01" max="2022-12-31" />
+      min="2021-10-01" max="2026-12-31" />
 
       <label for="start">End date: </label>
 
       <input type ="date" id="end" className="trip-end"
       onChange={handleControlledEndDate}
       value={reservation.endDate}
-      min="2021-10-01" max="2022-12-31" />
+      min="2021-10-01" max="2026-12-31" />
 
       </div>
       </fieldset>

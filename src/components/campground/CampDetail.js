@@ -13,7 +13,6 @@ export const CampDetail = (props) => {
     const history = useHistory()
 
    
-
     useEffect(() => {
         if(props.park) {
             setPark(props.park)

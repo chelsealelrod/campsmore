@@ -9,7 +9,10 @@ export const MessageProvider = (props) => {
     const getMessages = () => {
         return fetch("http://localhost:8088/messages")
         .then(rest => rest.json())
-        .then(setMessages)
+        .then((data) => {
+            setMessages(data)
+            return data
+        })
     }
 
     const addMessage = messageObj => {

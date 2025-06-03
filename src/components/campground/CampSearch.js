@@ -1,7 +1,5 @@
 import { CampGroundContext } from "./CampProvider"
 import React, { useContext, useEffect, useState } from "react"
-// import { useHistory, Link } from "react-router-dom";
-
 
 
 export const CampSearch = () => {
